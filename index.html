@@ -1,38 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-   <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a href="/" class="logo">Name</a>
 
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#" class="nav-link nav-link-current">Trends</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">Archives</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">Drops</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">Community</a>
-        </li>
-      </ul>
-
-      <a href="#" class="header-btn">Join the Club</a>
+  <header class="header">
+    <p class="header__logo">
+      <img src="logo_velto_2version 1.png" alt="Travel Logo">
+    </p>
+    <nav class="header__nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Servise</a>
+      <a href="#">Price</a>
+      <a href="#">Contact</a>
     </nav>
+    <div class="header__btns">
+      <button class="btn-login">Login</button>
+      <button class="btn-signup">Sign up</button>
+    </div>
+  </header>
+
+  <main class="hero">
+
+    <div class="hero__left">
+      <h1 class="hero__title">Live the live you`ve<br>always wanted to live</h1>
+      <p class="hero__desc">
+        Discover breathtaking destinations, create unforgettable memories, and explore the world with confidence. From relaxing beaches to exciting city adventures, we help you plan the perfect journey tailored to your dreams.
+      </p>
+
+      <div class="search">
+        <button class="search__field" data-modal-open="date">
+          <span class="search__icon"></span>
+          <span class="search__info">
+            <span class="search__label">Date</span>
+            <span class="search__value" id="date-display">13-06-2026</span>
+          </span>
+          <span class="search__arrow">&#9660;</span>
+        </button>
+
+        <span class="search__divider"></span>
+
+        <button class="search__field" data-modal-open="location">
+          <span class="search__icon"></span>
+          <span class="search__info">
+            <span class="search__label">Location</span>
+            <span class="search__value" id="location-display">Mumbai, India</span>
+          </span>
+          <span class="search__arrow">✈️</span>
+        </button>
+
+        <button class="search__btn"></button>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <div class="hero__arch">
+        <img src="woman1.webp" alt="Travel Woman">
+      </div>
+
+      <div class="hero__badge">
+        <img src="4-2.png" alt="Travel">
+      </div>
+    </div>
+
+  </main>
+
+  <div class="backdrop is-hidden" data-modal="date">
+    <div class="modal">
+      <button class="btn-close" data-modal-close="date"></button>
+      <div class="modal__content">
+        <h2>Виберіть дату</h2>
+        <p>Оберіть дату подорожі</p>
+        <input type="date" id="date-input" class="modal__input" />
+        <button class="modal__btn" id="date-confirm">Підтвердити</button>
+      </div>
+    </div>
   </div>
-</header> 
+
+  <div class="backdrop is-hidden" data-modal="location">
+    <div class="modal">
+      <button class="btn-close" data-modal-close="location"></button>
+      <div class="modal__content">
+        <h2>Виберіть локацію</h2>
+        <p>Куди хочете поїхати?</p>
+        <input type="text" id="location-input" class="modal__input" placeholder="Місто, Країна" />
+        <button class="modal__btn" id="location-confirm">Підтвердити</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
