@@ -15,9 +15,6 @@ body {
   background-attachment: fixed;
 }
 
-body.no-scroll {
-  overflow: hidden;
-}
 .header {
   display: flex;
   align-items: center;
@@ -80,8 +77,6 @@ body.no-scroll {
 .btn-signup:hover {
   opacity: 0.80;
 }
-
-/* ── HERO ── */
 
 .hero {
   display: flex;
@@ -207,32 +202,21 @@ body.no-scroll {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  background: #fff;
-  border: 4px solid #74c46e;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   z-index: 10;
   padding: 10px;
   overflow: hidden;
 }
 
-.hero__badge img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 214, 249, 0.5);
+  background-color: rgba(37, 37, 37, 0.5);
   z-index: 100;
 }
 .backdrop.is-hidden {
@@ -280,12 +264,20 @@ body.no-scroll {
   font-size: 0.9rem;
   width: 100%;
 }
-
 .modal__btn {
-  background-color: aqua;
-  border: none;
-  padding: 8px 22px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9rem;
+padding: 10px 20px;
+border: none;
+background-color: rgb(66, 65, 65);
+color: white;
+cursor: pointer;
+border-radius: 6px;
+transition: all 0.25s ease;
+}
+.modal__btn:hover {
+background-color: #6c6c6c;
+transform: translateY(-2px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+button:active {
+transform: translateY(0);
 }
