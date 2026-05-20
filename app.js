@@ -1,4 +1,3 @@
-
 (() => {
     const refs = {
         openModalBtn: document.querySelector("[data-modal-open='date']"),
@@ -22,7 +21,6 @@
         document.body.classList.remove("no-scroll");
     });
 })();
-
 (() => {
     const refs = {
         openModalBtn: document.querySelector("[data-modal-open='location']"),
@@ -44,4 +42,30 @@
         refs.modal.classList.add("is-hidden");
         document.body.classList.remove("no-scroll");
     });
+})();
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector("[data-modal-open='login']"),
+        closeModalBtn: document.querySelector("[data-modal-close='login']"),
+        modal: document.querySelector("[data-modal='login']"),
+    };
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+        document.body.classList.toggle("no-scroll");
+    }
+})();
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector("[data-modal-open='signup']"),
+        closeModalBtn: document.querySelector("[data-modal-close='signup']"),
+        modal: document.querySelector("[data-modal='signup']"),
+    };
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+        document.body.classList.toggle("no-scroll");
+    }
 })();

@@ -9,36 +9,36 @@
 <body>
 
   <header class="header">
-    <p class="header__logo">
-      <img src="images/logo_velto_2version 1.png" alt="Travel Logo">
-    </p>
+    <div class="header__logo">
+      <img src="images/logo_velto_2version 1.png" alt="logo">
+    </div>
     <nav class="header__nav">
       <a href="#">Home</a>
       <a href="#">About</a>
-      <a href="#">Servise</a>
+      <a href="#">Service</a>
       <a href="#">Price</a>
       <a href="#">Contact</a>
     </nav>
     <div class="header__btns">
-      <button class="btn-login">Login</button>
-      <button class="btn-signup">Sign up</button>
+      <button class="btn-outline" data-modal-open="login">Login</button>
+      <button class="btn-dark" data-modal-open="signup">Sign up</button>
     </div>
   </header>
 
-  <main class="hero">
-
+  <section class="hero">
     <div class="hero__left">
       <h1 class="hero__title">Live the live you`ve<br>always wanted to live</h1>
       <p class="hero__desc">
-        Discover breathtaking destinations, create unforgettable memories, and explore the world with confidence. From relaxing beaches to exciting city adventures, we help you plan the perfect journey tailored to your dreams.
+        Discover breathtaking destinations, create unforgettable memories, and
+        explore the world with confidence. From relaxing beaches to exciting city
+        adventures, we help you plan the perfect journey tailored to your dreams.
       </p>
 
       <div class="search">
         <button class="search__field" data-modal-open="date">
-          <span class="search__icon"></span>
           <span class="search__info">
             <span class="search__label">Date</span>
-            <span class="search__value" id="date-display">13-06-2026</span>
+            <span class="search__value" id="date-display">25-02-2024</span>
           </span>
           <span class="search__arrow">&#9660;</span>
         </button>
@@ -46,33 +46,35 @@
         <span class="search__divider"></span>
 
         <button class="search__field" data-modal-open="location">
-          <span class="search__icon"></span>
           <span class="search__info">
             <span class="search__label">Location</span>
             <span class="search__value" id="location-display">Mumbai, India</span>
           </span>
-          <span class="search__arrow">✈️</span>
+          <span class="search__arrow">&#9660;</span>
         </button>
 
-        <button class="search__btn"></button>
+        <button class="search__btn">&#128269;</button>
       </div>
     </div>
 
     <div class="hero__right">
       <div class="hero__arch">
-        <img src="images/woman1.webp" alt="Travel Woman">
+        <img src="images/woman1.webp" alt="woman">
       </div>
 
       <div class="hero__badge">
-        <img src="images/4-2.png" alt="Travel">
+        <img src="images/4-2.png" alt="badge">
+      </div>
+
+      <div class="hero__plane">
+        <img src="images/Group.png" alt="plane">
       </div>
     </div>
-
-  </main>
+  </section>
 
   <div class="backdrop is-hidden" data-modal="date">
     <div class="modal">
-      <button class="btn-close" data-modal-close="date"></button>
+      <button class="btn-close" data-modal-close="date">&#10005;</button>
       <div class="modal__content">
         <h2>Виберіть дату</h2>
         <p>Оберіть дату подорожі</p>
@@ -84,12 +86,37 @@
 
   <div class="backdrop is-hidden" data-modal="location">
     <div class="modal">
-      <button class="btn-close" data-modal-close="location"></button>
+      <button class="btn-close" data-modal-close="location">&#10005;</button>
       <div class="modal__content">
         <h2>Виберіть локацію</h2>
         <p>Куди хочете поїхати?</p>
         <input type="text" id="location-input" class="modal__input" placeholder="Місто, Країна" />
         <button class="modal__btn" id="location-confirm">Підтвердити</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="backdrop is-hidden" data-modal="login">
+    <div class="modal modal--auth">
+      <button class="btn-close" data-modal-close="login">&#10005;</button>
+      <div class="modal__content">
+        <h2 class="modal__heading">Login</h2>
+        <input type="email" class="modal__input" placeholder="Enter your email" />
+        <input type="password" class="modal__input" placeholder="Password" />
+        <button class="modal__btn modal__btn--dark">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="backdrop is-hidden" data-modal="signup">
+    <div class="modal modal--auth">
+      <button class="btn-close" data-modal-close="signup">&#10005;</button>
+      <div class="modal__content">
+        <h2 class="modal__heading">Sign up</h2>
+        <input type="email" class="modal__input" placeholder="Enter your email" />
+        <input type="password" class="modal__input" placeholder="Password" />
+        <input type="password" class="modal__input" placeholder="Create Password" />
+        <button class="modal__btn modal__btn--dark">Sign up</button>
       </div>
     </div>
   </div>
