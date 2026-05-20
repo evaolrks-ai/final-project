@@ -275,9 +275,10 @@ body.no-scroll {
   transform: translate(-50%, -50%);
   min-width: 400px;
   padding: 32px 28px 28px;
-  background-color: #f2f2f2;
+   background-color: #bce2f0;
   border-radius: 8px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  color:#00000080;
 }
 
 .modal--auth {
@@ -295,6 +296,7 @@ body.no-scroll {
   font-weight: 700;
   color: #1a2535;
   margin-bottom: 18px;
+  
 }
 
 .btn-close {
@@ -312,7 +314,7 @@ body.no-scroll {
   margin-bottom: 12px;
   padding: 10px 14px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #e0f2fc;
   font-size: 0.9rem;
   font-family: 'Inter', sans-serif;
   width: 100%;
@@ -327,7 +329,8 @@ body.no-scroll {
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   cursor: pointer;
-  background-color: aqua;
+  color: #dcdcdc;
+background-color: #1a2535;
   transition: opacity 0.2s;
 }
 
@@ -338,4 +341,8 @@ body.no-scroll {
 .modal__btn--dark {
   background: #1a2535;
   color: #fff;
+}
+
+.modal__btn--dark:hover {
+  opacity: 0.82;
 }
