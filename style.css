@@ -93,7 +93,6 @@ body.no-scroll {
   gap: 10px;
 }
 
-
 .hero {
   display: flex;
   align-items: center;
@@ -137,7 +136,7 @@ body.no-scroll {
   background: none;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
   padding: 8px 0;
 }
 
@@ -150,12 +149,14 @@ body.no-scroll {
 .search__label {
   font-size: 0.82rem;
   font-weight: 600;
-  color: #fff;
+  margin-left: 75px;
+  color: #ffffff;
 }
 
 .search__value {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.6);
+    margin-left: 75px;
 }
 
 .search__arrow {
@@ -258,7 +259,7 @@ body.no-scroll {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 214, 249, 0.5);
+  background-color: rgba(48, 51, 68, 0.5);
   z-index: 100;
 }
 
@@ -279,6 +280,7 @@ body.no-scroll {
   border-radius: 8px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
   color:#00000080;
+ 
 }
 
 .modal--auth {
@@ -289,6 +291,8 @@ body.no-scroll {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: rgb(2, 2, 2);
+    margin-bottom: 18px;
 }
 
 .modal__heading {
@@ -296,7 +300,6 @@ body.no-scroll {
   font-weight: 700;
   color: #1a2535;
   margin-bottom: 18px;
-  
 }
 
 .btn-close {
