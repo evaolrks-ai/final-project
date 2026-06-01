@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Travel</title>
+  <title>Velto Travel</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- ========== HEADER ========== -->
   <header class="header">
     <div class="header__logo">
       <img src="images/logo_velto_2version 1.png" alt="logo">
@@ -25,9 +27,10 @@
     </div>
   </header>
 
+  <!-- ========== SECTION 1 — HERO ========== -->
   <section class="hero">
     <div class="hero__left">
-      <h1 class="hero__title">Live the live you`ve<br>always wanted to live</h1>
+      <h1 class="hero__title">Live the life you've<br>always wanted to live</h1>
       <p class="hero__desc">
         Discover breathtaking destinations, create unforgettable memories, and
         explore the world with confidence. From relaxing beaches to exciting city
@@ -61,41 +64,254 @@
       <div class="hero__arch">
         <img src="images/woman1.webp" alt="woman">
       </div>
-
       <div class="hero__badge">
         <img src="images/4-2.png" alt="badge">
       </div>
-
       <div class="hero__plane">
         <img src="images/Group.png" alt="plane">
       </div>
     </div>
   </section>
 
+  <!-- ========== SECTION 2 — ABOUT US ========== -->
+  <section class="section2">
+    <div class="div-img">
+      <img class="img1" src="./img/main2foto.webp" alt="travel photo 1">
+      <img class="img2" src="./img/main2foto2.webp" alt="travel photo 2">
+      <img class="img-stick" src="./img/stickersec2.webp" alt="sticker">
+    </div>
+    <div class="div-text">
+      <p>About us</p>
+      <h2>Our itinerary aims to<br>fulfil your every wish</h2>
+      <p class="div-text-p">We believe that every trip should be meaningful and inspiring. Our team carefully
+        designs travel experiences that combine comfort, adventure, and unforgettable moments so you can enjoy every step of
+        your journey.</p>
+      <div class="div-ratings">
+        <div>
+          <h3 class="div-h3">20</h3>
+          <p class="div-p">Years of experience</p>
+        </div>
+        <div>
+          <h3 class="div-h3">5k</h3>
+          <p class="div-p">Happy customers</p>
+        </div>
+        <div>
+          <h3 class="div-h3">10k</h3>
+          <p class="div-p">Destinations booked</p>
+        </div>
+        <div>
+          <h3 class="div-h3">4.3</h3>
+          <p class="div-p">Average rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3 — TOUR PACKAGES ========== -->
+  <section class="section-three">
+    <div class="testimonails-container">
+      <div>
+        <p class="testimonails-text">Tour Packages</p>
+        <h2 class="testimonails-title">Amazing places<br>in the world</h2>
+      </div>
+      <a href="./tourism.html"><button class="tour-button">See all pages</button></a>
+    </div>
+    <div class="container-card">
+      <div class="tour-container-unicalted--card">
+        <img src="./img/SEA SIDE.webp" alt="SEA SIDE" class="img-card">
+        <h4 class="tour-container--title">SEA SIDE</h4>
+        <div class="container-price--text">
+          <p class="tour-container--price">$499</p>
+          <p class="tour-container--text">14 DAYS TOUR</p>
+        </div>
+      </div>
+      <div class="tour-container--card">
+        <img src="./img/MILLS.webp" alt="MILLS" class="img-card">
+        <h4 class="tour-container--title">MILLS</h4>
+        <div class="container-price--text">
+          <p class="tour-container--price">$399</p>
+          <p class="tour-container--text">10 DAYS TOUR</p>
+        </div>
+      </div>
+      <div class="tour-container--card">
+        <img src="./img/BEACH.webp" alt="BEACH" class="img-card">
+        <h4 class="tour-container--title">BEACH</h4>
+        <div class="container-price--text">
+          <p class="tour-container--price">$459</p>
+          <p class="tour-container--text">10 DAYS TOUR</p>
+        </div>
+      </div>
+      <div class="tour-container--card">
+        <img src="./img/PLACE.webp" alt="PLACE" class="img-card">
+        <h4 class="tour-container--title">PLACE</h4>
+        <div class="container-price--text">
+          <p class="tour-container--price">$299</p>
+          <p class="tour-container--text">7 DAYS TOUR</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 4 — TESTIMONIALS ========== -->
+  <section class="section-4">
+    <div class="section-header">
+      <div class="main-text">
+        <p class="title">testimonials</p>
+        <h2>Dare to live the life you've always wanted</h2>
+      </div>
+      <div class="main-button">
+        <button data-modal-open="testimonials" class="btn-open">See all pages</button>
+        <img src="./img/sticker.webp" class="sticker" alt="sticker">
+      </div>
+    </div>
+
+    <div class="div-containers">
+      <div class="cards">
+        <div class="card-img">
+          <img class="img-bg" src="./img/annaBg.webp" alt="anna bg">
+          <img class="avatar" src="./img/anna.webp" alt="anna">
+        </div>
+        <h2>ANNA</h2>
+        <p>Traveling with this team was an amazing experience. Everything was perfectly organized, and I enjoyed every moment of the trip.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="cards">
+        <div class="card-img">
+          <img class="img-bg" src="./img/markBg.webp" alt="mark bg">
+          <img class="avatar" src="./img/mark.webp" alt="mark">
+        </div>
+        <h2>MARK</h2>
+        <p>The destinations were beautiful, and the service exceeded my expectations. I would definitely travel with them again.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="cards">
+        <div class="card-img">
+          <img class="img-bg" src="./img/liliaBg.webp" alt="lilia bg">
+          <img class="avatar" src="./img/lilia.webp" alt="lilia">
+        </div>
+        <h2>LILIA</h2>
+        <p>I loved the personalized itinerary and the attention to detail. It made my vacation relaxing and unforgettable.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="cards">
+        <div class="card-img">
+          <img class="img-bg" src="./img/mickleBg.webp" alt="mickle bg">
+          <img class="avatar" src="./img/mickle.webp" alt="mickle">
+        </div>
+        <h2>MICKLE</h2>
+        <p>From booking to the final day of the trip, everything was smooth and professional. Highly recommended for travelers.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 5 — BANNER + TOUR CARDS ========== -->
+  <main>
+    <section class="tour">
+      <h3 class="tour-title">If we persist long enough,<br>we can achieve anything</h3>
+      <p class="tour-text">Create memories that last forever</p>
+      <a href="./tourism.html"><button class="tour-button">See all pages</button></a>
+      <div class="tour-container">
+        <div class="tour-container--card">
+          <img src="./img/korea.webp" alt="korea" class="img-card">
+          <h4 class="tour-container--title">KOREA</h4>
+          <div class="container-price--text">
+            <p class="tour-container--price">$500</p>
+            <p class="tour-container--text">10 DAYS TOUR</p>
+          </div>
+        </div>
+        <div class="tour-container--card">
+          <img src="./img/japan.webp" alt="japan" class="img-card">
+          <h4 class="tour-container--title">JAPAN</h4>
+          <div class="container-price--text">
+            <p class="tour-container--price">$500</p>
+            <p class="tour-container--text">10 DAYS TOUR</p>
+          </div>
+        </div>
+        <div class="tour-container--card">
+          <img src="./img/china.webp" alt="china" class="img-card">
+          <h4 class="tour-container--title">CHINA</h4>
+          <div class="container-price--text">
+            <p class="tour-container--price">$500</p>
+            <p class="tour-container--text">10 DAYS TOUR</p>
+          </div>
+        </div>
+        <div class="tour-container--card">
+          <img src="./img/indonesia.webp" alt="indonesia" class="img-card">
+          <h4 class="tour-container--title">INDONESIA</h4>
+          <div class="container-price--text">
+            <p class="tour-container--price">$500</p>
+            <p class="tour-container--text">10 DAYS TOUR</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer">
+      <img src="./img/logo.webp" alt="logo">
+      <p class="footer-text">Start your next adventure with us and explore the beauty of the world one destination at a time.</p>
+    </div>
+    <div>
+      <h5 class="footer-title">About</h5>
+      <p class="container-footer--text">Plans</p>
+      <p class="container-footer--text">News</p>
+      <p class="container-footer--text">Features</p>
+      <p class="container-footer--text">About Us</p>
+    </div>
+    <div>
+      <h5 class="footer-title">Company</h5>
+      <p class="container-footer--text">Travel</p>
+      <p class="container-footer--text">Partners</p>
+      <p class="container-footer--text">FAQs</p>
+      <p class="container-footer--text">Blog</p>
+    </div>
+    <div>
+      <h5 class="footer-title">Support</h5>
+      <p class="container-footer--text">Support</p>
+      <p class="container-footer--text">Feedback</p>
+      <p class="container-footer--text">Contact Us</p>
+      <p class="container-footer--text">Accounts</p>
+    </div>
+    <div class="footer-container">
+      <h5 class="footer-title">Newsletter</h5>
+      <p class="text-footer">Subscribe to newsletter to get more exciting offers.</p>
+      <input type="text" placeholder="Your email" class="input-footer">
+      <img src="./img/button.webp" alt="button" class="button-footer">
+    </div>
+  </footer>
+
+  <!-- ========== MODALS ========== -->
+
+  <!-- Date modal -->
   <div class="backdrop is-hidden" data-modal="date">
-      <div class="modal">
-        <button class="btn-close" data-modal-close="date">✕</button>
+    <div class="modal">
+      <button class="btn-close" data-modal-close="date">✕</button>
       <div class="modal__content">
-        <h2>Виберіть дату</h2>
-        <p>Оберіть дату подорожі</p>
+        <h2>Choose a date</h2>
+        <p>Select your travel date</p>
         <input type="date" id="date-input" class="modal__input" />
-        <button class="modal__btn" id="date-confirm">Підтвердити</button>
+        <button class="modal__btn" id="date-confirm">Confirm</button>
       </div>
     </div>
   </div>
 
+  <!-- Location modal -->
   <div class="backdrop is-hidden" data-modal="location">
     <div class="modal">
       <button class="btn-close" data-modal-close="location">✕</button>
       <div class="modal__content">
-        <h2>Виберіть локацію</h2>
-        <p>Куди хочете поїхати?</p>
-        </div>
-        <input type="text" id="location-input" class="modal__input" placeholder="Місто, Країна" />
-        <button class="modal__btn" id="location-confirm">Підтвердити</button>
+        <h2>Choose a location</h2>
+        <p>Where do you want to go?</p>
+        <input type="text" id="location-input" class="modal__input" placeholder="City, Country" />
+        <button class="modal__btn" id="location-confirm">Confirm</button>
+      </div>
     </div>
   </div>
 
+  <!-- Login modal -->
   <div class="backdrop is-hidden" data-modal="login">
     <div class="modal modal--auth">
       <button class="btn-close" data-modal-close="login">✕</button>
@@ -108,16 +324,54 @@
     </div>
   </div>
 
+  <!-- Sign up modal -->
   <div class="backdrop is-hidden" data-modal="signup">
     <div class="modal modal--auth">
       <button class="btn-close" data-modal-close="signup">✕</button>
       <div class="modal__content">
         <h2 class="modal__heading">Sign up</h2>
-        <input type="name" class="modal__input" placeholder="Enter your name" />
+        <input type="text" class="modal__input" placeholder="Enter your name" />
         <input type="email" class="modal__input" placeholder="Enter your email" />
         <input type="password" class="modal__input" placeholder="Create Password" />
         <button class="modal__btn modal__btn--dark">Sign up</button>
       </div>
+    </div>
+  </div>
+
+  <!-- Testimonials modal (section 4) -->
+  <div class="backdrop is-hidden" data-modal="testimonials">
+    <div class="modal modal--testimonials">
+      <div class="modal-content">
+        <div class="tes-left">
+          <div class="tes-row">
+            <p>The travel destinations look absolutely breathtaking. I discovered so many places I want to visit.</p>
+            <img class="modal-img" src="./img/leftGirl1.webp" alt="">
+          </div>
+          <div class="tes-row">
+            <p>The travel ideas are incredible and make exploring the world feel easy and exciting.</p>
+            <img class="modal-img" src="./img/leftGirl2.webp" alt="">
+          </div>
+          <div class="tes-row">
+            <p>The trips and destinations feel exciting and inspiring. Perfect for planning a dream vacation.</p>
+            <img class="modal-img" src="./img/leftBoy3.webp" alt="">
+          </div>
+        </div>
+        <div class="tes-right">
+          <div class="tes-row">
+            <p>Absolutely loved the design and the travel destinations. Everything feels modern and inspiring!</p>
+            <img class="modal-img" src="./img/rightBoy1.webp" alt="">
+          </div>
+          <div class="tes-row">
+            <p>One of the coolest travel websites I've seen. Everything looks polished and attractive.</p>
+            <img class="modal-img" src="./img/rightBoy2.webp" alt="">
+          </div>
+          <div class="tes-row">
+            <p>The website feels professional and relaxing at the same time. Perfect for travel lovers.</p>
+            <img class="modal-img" src="./img/rightGirl3.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <button data-modal-close="testimonials" class="btn-close-back">Back</button>
     </div>
   </div>
 
