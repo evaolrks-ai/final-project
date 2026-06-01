@@ -1,6 +1,3 @@
-/* ===========================
-   RESET & BASE
-=========================== */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -27,9 +24,6 @@ a {
   color: inherit;
 }
 
-/* ===========================
-   SHARED BUTTONS
-=========================== */
 .btn-outline {
   padding: 9px 22px;
   font-family: 'Manrope', sans-serif;
@@ -61,9 +55,6 @@ a {
   opacity: 0.82;
 }
 
-/* ===========================
-   HEADER
-=========================== */
 .header {
   display: flex;
   align-items: center;
@@ -93,9 +84,6 @@ a {
   gap: 10px;
 }
 
-/* ===========================
-   SECTION 1 — HERO
-=========================== */
 .hero {
   display: flex;
   align-items: center;
@@ -242,9 +230,6 @@ a {
   display: block;
 }
 
-/* ===========================
-   SECTION 2 — ABOUT US
-=========================== */
 .section2 {
   display: flex;
   justify-content: center;
@@ -315,9 +300,6 @@ a {
   line-height: 1.6;
 }
 
-/* ===========================
-   SECTION 3 — TOUR PACKAGES
-=========================== */
 .section-three {
   background-image: url(./img/Earth.webp);
   padding: 0 80px 307px;
@@ -410,9 +392,6 @@ a {
   background-color: #07426a;
 }
 
-/* ===========================
-   SECTION 4 — TESTIMONIALS
-=========================== */
 .section-4 {
   width: 100%;
   max-width: 1140px;
@@ -538,9 +517,6 @@ a {
   margin-bottom: 20px;
 }
 
-/* ===========================
-   SECTION 5 — BANNER + CARDS
-=========================== */
 .tour {
   background-image: url(./img/Earth.webp);
   background-size: cover;
@@ -571,9 +547,6 @@ a {
   justify-content: space-around;
 }
 
-/* ===========================
-   TOURISM PAGE
-=========================== */
 .container-tourism {
     display: flex;
     justify-content: space-around;
@@ -596,9 +569,6 @@ a {
     margin-left: 55px;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
 footer {
   display: flex;
   justify-content: space-between;
@@ -658,9 +628,6 @@ footer {
   cursor: pointer;
 }
 
-/* ===========================
-   MODALS — SHARED
-=========================== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -680,7 +647,6 @@ footer {
   pointer-events: none;
 }
 
-/* Small modals (date, location, login, signup) */
 .modal {
   position: relative;
   min-width: 400px;
@@ -754,7 +720,6 @@ footer {
   color: #fff;
 }
 
-/* Testimonials modal (large) */
 .modal--testimonials {
   background-color: #A3C9D9;
   width: 90%;
