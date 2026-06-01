@@ -8,7 +8,7 @@ body {
   font-family: "Manrope", sans-serif;
   color: #0D2F44;
   background-color: #BCE2F1;
-  background-image: url("images/Earth.png");
+  background-image: url("img/Earth-2.webp");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -33,7 +33,7 @@ a {
   border: 1.5px solid #1a2535;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 .btn-outline:hover {
   background: #1a2535;
@@ -301,7 +301,7 @@ a {
 }
 
 .section-three {
-  background-image: url(./img/Earth.webp);
+  background-image: url(./img/Earth-2.webp);
   padding: 0 80px 307px;
 }
 .testimonails-container {
