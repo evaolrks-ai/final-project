@@ -572,6 +572,31 @@ a {
 }
 
 /* ===========================
+   TOURISM PAGE
+=========================== */
+.container-tourism {
+    display: flex;
+    justify-content: space-around;
+}
+.tourism-title {
+    font-size: 50px;
+    margin-left: 80px;
+}
+.tourism-container--card {
+    background-color: #FFFFFFCC;
+    border: 1px solid;
+    border-radius: 12px;
+    margin-top: 15px;
+    width: 280px;
+}
+.tourism-box {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-left: 55px;
+}
+
+/* ===========================
    FOOTER
 =========================== */
 footer {
